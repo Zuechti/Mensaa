@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ addVictim()
+comment0.text=addVictim\ (public)\ *****************************************
+comment1.params=i
+comment1.target=int\ getDessertStorage(int)
+comment1.text=getDesserStorage\ (public)\ **********************************
+comment2.params=i
+comment2.target=int\ getStorage(int)
+comment2.text=getStorage\ (public)\ ****************************************
+comment3.params=i
+comment3.target=void\ giveDessert(int)
+comment3.text=giveDessert\ (public)\ ***************************************
+comment4.params=i
+comment4.target=void\ giveFood(int)
+comment4.text=giveFood\ (public)\ ******************************************
+comment5.params=
+comment5.target=void\ nextPlease()
+comment5.text=nextPlease\ (public)\ ****************************************
+comment6.params=
+comment6.target=Victim\ getNextVictim()
+comment6.text=getNextVictim\ (public)\ *************************************
+numComments=7

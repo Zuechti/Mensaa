@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Victim()
+comment1.params=
+comment1.target=int\ getDessert()
+comment1.text=getDessert\ (public)\ ****************************************
+comment2.params=
+comment2.target=void\ generateFood()
+comment3.params=
+comment3.target=int\ getFood()
+comment3.text=getFood\ (public)\ *******************************************
+comment4.params=
+comment4.target=java.lang.String\ Order()
+comment4.text=Order\ (public)\ *********************************************
+numComments=5
