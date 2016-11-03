@@ -6,18 +6,15 @@
 
 public class Victim {
 
-    private int dessert;
-    private int food;
+    
+    private int food[]=new int[2];
 
     public Victim(){
         generateFood();
     }
 
     /********* getDessert (public) *****************************************/
-    public int getDessert()
-    {
-        return dessert;
-    }
+    
 
     public void generateFood(){
         //generiert eine Zufällige Zahl zwischen 1 bis 4 und convertiert sie zu dem Integer food
@@ -26,18 +23,18 @@ public class Victim {
             fd= Math.random()*10;
         }
         fd=Math.round(fd);
-        food=(int)fd;
+        food[0]=(int)fd;
         //generiert eine Zufällige Zahl zwischen 1 bis 4 und convertiert sie zu dem Integer dessert
         double ds= Math.random()*10;
         while(ds>4||ds<1){
             ds= Math.random()*10;
         }
         ds=Math.round(ds);
-        dessert=(int)ds;
+        food[1]=(int)ds;
     }
 
     /********* getFood (public) ********************************************/
-    public int getFood()
+    public int[] getFood()
     {
         return food;
     }
@@ -50,7 +47,7 @@ public class Victim {
 
         //generiert strings aus den integern
 
-        switch(getFood()){
+        switch(getFood()[0]){
             case 1: fd="das Schnitzel mit Pommes";
                 break;
             case 2: fd="die Bratkartoffeln mit Speck";
@@ -60,17 +57,17 @@ public class Victim {
             case 4: fd="das Omlette mit Tomaten und Speck";
                 break;
         }
-        switch(getDessert()){
+        switch(getFood()[1]){
             case 1: ds="Eis mit Karamellsauce";
                 break;
             case 2: ds="Joghurt";
                 break;
             case 3: ds="Fruchtquark";
                 break;
-            case 4: ds="Vla! Denn Wir nehmen den Pudding und Schieben ihn woanders hin!";
+            case 4: ds="Vla! Denn Wir nehmen den Pudding"+"\n"+" und Schieben ihn woanders hin!";
                 break;
         }
-        return "Ich hätte gerne einmal "+fd+" und etwas von dem "+ds;
+        return "Ich hätte gerne einmal "+fd+"\n"+" und etwas von dem "+ds;
     }
 
 }

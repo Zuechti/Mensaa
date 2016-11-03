@@ -7,8 +7,16 @@ public class Cafeteria {
 
     private int dessertStorage[]=new int[4];
     private int storage[]= new int[4];
-    private Queue<Victim> schlingedischlange;
-    private Victim nextVictim;
+    private Queue<Victim> schlingedischlange= new Queue();
+    gui g;
+
+    
+    public Cafeteria(){
+        for(int i=0;i!=5;i++){
+            addVictim();
+        }
+        g=new gui(this);
+    }
 
     /********* addVictim (public) ******************************************/
     public void addVictim()
@@ -29,21 +37,21 @@ public class Cafeteria {
     }
 
     /********* giveDessert (public) ****************************************/
-    public void giveDessert(int i)
+    public boolean giveDessert(int i)
     {
-
+        return i==getNextVictim().getFood()[1];
     }
 
     /********* giveFood (public) *******************************************/
-    public void giveFood(int i)
+    public boolean giveFood(int i)
     {
-
+        return i==getNextVictim().getFood()[0];
     }
 
     /********* nextPlease (public) *****************************************/
     public void nextPlease()
     {
-
+        schlingedischlange.dequeue();
     }
 
     /********* getNextVictim (public) **************************************/
